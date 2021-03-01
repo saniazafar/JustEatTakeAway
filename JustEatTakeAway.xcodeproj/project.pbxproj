@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ACC859C25DFD99E009A13FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC859B25DFD99E009A13FA /* AppDelegate.swift */; };
+		1ACC859E25DFD99E009A13FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC859D25DFD99E009A13FA /* SceneDelegate.swift */; };
+		1ACC85A025DFD99E009A13FA /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC859F25DFD99E009A13FA /* RestaurantListViewController.swift */; };
+		1ACC85A325DFD99E009A13FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ACC85A125DFD99E009A13FA /* Main.storyboard */; };
+		1ACC85A525DFD99F009A13FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ACC85A425DFD99F009A13FA /* Assets.xcassets */; };
+		1ACC85A825DFD99F009A13FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ACC85A625DFD99F009A13FA /* LaunchScreen.storyboard */; };
+		1ACC85B325DFD99F009A13FA /* JustEatTakeAwayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC85B225DFD99F009A13FA /* JustEatTakeAwayTests.swift */; };
+		1ACC85BE25DFD99F009A13FA /* JustEatTakeAwayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC85BD25DFD99F009A13FA /* JustEatTakeAwayUITests.swift */; };
+		1ACC85DD25DFDFEA009A13FA /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC85DC25DFDFEA009A13FA /* JSONParser.swift */; };
+		1ACC85E225DFF246009A13FA /* restaurant-list.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ACC85E125DFF246009A13FA /* restaurant-list.json */; };
+		1ACC85E725DFF74D009A13FA /* CodableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC85E625DFF74D009A13FA /* CodableParser.swift */; };
+		1ACC85EC25DFF76B009A13FA /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC85EB25DFF76B009A13FA /* Restaurant.swift */; };
+		1ACC85F825DFFA63009A13FA /* RestaurantListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC85F725DFFA63009A13FA /* RestaurantListPresenter.swift */; };
+		1ACC860025DFFA6E009A13FA /* RestaurantListPresenterIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC85FF25DFFA6E009A13FA /* RestaurantListPresenterIO.swift */; };
+		1ACC860525DFFA82009A13FA /* RestaurantListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC860425DFFA82009A13FA /* RestaurantListInteractor.swift */; };
+		1ACC860A25DFFA9D009A13FA /* RestaurantListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC860925DFFA9D009A13FA /* RestaurantListInteractorIO.swift */; };
+		1ACC860F25DFFAB3009A13FA /* RestaurantListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC860E25DFFAB3009A13FA /* RestaurantListAssembly.swift */; };
+		1ACC861425DFFBFA009A13FA /* RestaurantListAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC861325DFFBFA009A13FA /* RestaurantListAssemblyProtocol.swift */; };
+		1ACC861D25E02124009A13FA /* RestaurantListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC861C25E02124009A13FA /* RestaurantListTableViewCell.swift */; };
+		1ACC862525E02304009A13FA /* RestaurantListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACC862425E02304009A13FA /* RestaurantListTableViewCell.xib */; };
+		1AFB220F25EB94F100A5DD92 /* FavoritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB220E25EB94F100A5DD92 /* FavoritesListView.swift */; };
+		1AFB221425EB9ACF00A5DD92 /* FavoritesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB221325EB9ACF00A5DD92 /* FavoritesListView.xib */; };
+		1AFB227C25ECE08700A5DD92 /* mock-response-best-match-sorted.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB226E25ECD3F200A5DD92 /* mock-response-best-match-sorted.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1ACC85AF25DFD99F009A13FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ACC859025DFD99E009A13FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ACC859725DFD99E009A13FA;
+			remoteInfo = JustEatTakeAway;
+		};
+		1ACC85BA25DFD99F009A13FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ACC859025DFD99E009A13FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ACC859725DFD99E009A13FA;
+			remoteInfo = JustEatTakeAway;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1ACC859825DFD99E009A13FA /* JustEatTakeAway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustEatTakeAway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACC859B25DFD99E009A13FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1ACC859D25DFD99E009A13FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1ACC859F25DFD99E009A13FA /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		1ACC85A225DFD99E009A13FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1ACC85A425DFD99F009A13FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ACC85A725DFD99F009A13FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1ACC85A925DFD99F009A13FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ACC85AE25DFD99F009A13FA /* JustEatTakeAwayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustEatTakeAwayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACC85B225DFD99F009A13FA /* JustEatTakeAwayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustEatTakeAwayTests.swift; sourceTree = "<group>"; };
+		1ACC85B425DFD99F009A13FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ACC85B925DFD99F009A13FA /* JustEatTakeAwayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustEatTakeAwayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACC85BD25DFD99F009A13FA /* JustEatTakeAwayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustEatTakeAwayUITests.swift; sourceTree = "<group>"; };
+		1ACC85BF25DFD99F009A13FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ACC85DC25DFDFEA009A13FA /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		1ACC85E125DFF246009A13FA /* restaurant-list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "restaurant-list.json"; sourceTree = "<group>"; };
+		1ACC85E625DFF74D009A13FA /* CodableParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableParser.swift; sourceTree = "<group>"; };
+		1ACC85EB25DFF76B009A13FA /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		1ACC85F725DFFA63009A13FA /* RestaurantListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListPresenter.swift; sourceTree = "<group>"; };
+		1ACC85FF25DFFA6E009A13FA /* RestaurantListPresenterIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListPresenterIO.swift; sourceTree = "<group>"; };
+		1ACC860425DFFA82009A13FA /* RestaurantListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListInteractor.swift; sourceTree = "<group>"; };
+		1ACC860925DFFA9D009A13FA /* RestaurantListInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListInteractorIO.swift; sourceTree = "<group>"; };
+		1ACC860E25DFFAB3009A13FA /* RestaurantListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListAssembly.swift; sourceTree = "<group>"; };
+		1ACC861325DFFBFA009A13FA /* RestaurantListAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListAssemblyProtocol.swift; sourceTree = "<group>"; };
+		1ACC861C25E02124009A13FA /* RestaurantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListTableViewCell.swift; sourceTree = "<group>"; };
+		1ACC862425E02304009A13FA /* RestaurantListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantListTableViewCell.xib; sourceTree = "<group>"; };
+		1AFB220E25EB94F100A5DD92 /* FavoritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListView.swift; sourceTree = "<group>"; };
+		1AFB221325EB9ACF00A5DD92 /* FavoritesListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesListView.xib; sourceTree = "<group>"; };
+		1AFB226E25ECD3F200A5DD92 /* mock-response-best-match-sorted.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mock-response-best-match-sorted.json"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ACC859525DFD99E009A13FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACC85AB25DFD99F009A13FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACC85B625DFD99F009A13FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ACC858F25DFD99E009A13FA = {
+			isa = PBXGroup;
+			children = (
+				1ACC859A25DFD99E009A13FA /* JustEatTakeAway */,
+				1ACC85B125DFD99F009A13FA /* JustEatTakeAwayTests */,
+				1ACC85BC25DFD99F009A13FA /* JustEatTakeAwayUITests */,
+				1ACC859925DFD99E009A13FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1ACC859925DFD99E009A13FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC859825DFD99E009A13FA /* JustEatTakeAway.app */,
+				1ACC85AE25DFD99F009A13FA /* JustEatTakeAwayTests.xctest */,
+				1ACC85B925DFD99F009A13FA /* JustEatTakeAwayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ACC859A25DFD99E009A13FA /* JustEatTakeAway */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC85CE25DFDA7B009A13FA /* AppDelegates */,
+				1ACC85D125DFDA9C009A13FA /* Models */,
+				1ACC85D025DFDA96009A13FA /* Modules */,
+				1AFB228625ED01B600A5DD92 /* HelperClasses */,
+				1ACC85CF25DFDA86009A13FA /* UIResources */,
+				1AFB228A25ED01FB00A5DD92 /* SupportingFiles */,
+				1ACC85A425DFD99F009A13FA /* Assets.xcassets */,
+				1ACC85A925DFD99F009A13FA /* Info.plist */,
+			);
+			path = JustEatTakeAway;
+			sourceTree = "<group>";
+		};
+		1ACC85B125DFD99F009A13FA /* JustEatTakeAwayTests */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC85B225DFD99F009A13FA /* JustEatTakeAwayTests.swift */,
+				1ACC85B425DFD99F009A13FA /* Info.plist */,
+			);
+			path = JustEatTakeAwayTests;
+			sourceTree = "<group>";
+		};
+		1ACC85BC25DFD99F009A13FA /* JustEatTakeAwayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC85BD25DFD99F009A13FA /* JustEatTakeAwayUITests.swift */,
+				1ACC85BF25DFD99F009A13FA /* Info.plist */,
+			);
+			path = JustEatTakeAwayUITests;
+			sourceTree = "<group>";
+		};
+		1ACC85CE25DFDA7B009A13FA /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC859B25DFD99E009A13FA /* AppDelegate.swift */,
+				1ACC859D25DFD99E009A13FA /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		1ACC85CF25DFDA86009A13FA /* UIResources */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC85A625DFD99F009A13FA /* LaunchScreen.storyboard */,
+				1ACC85A125DFD99E009A13FA /* Main.storyboard */,
+				1ACC862425E02304009A13FA /* RestaurantListTableViewCell.xib */,
+				1AFB221325EB9ACF00A5DD92 /* FavoritesListView.xib */,
+			);
+			path = UIResources;
+			sourceTree = "<group>";
+		};
+		1ACC85D025DFDA96009A13FA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC85D225DFDAAE009A13FA /* RestaurantList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1ACC85D125DFDA9C009A13FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC85EB25DFF76B009A13FA /* Restaurant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1ACC85D225DFDAAE009A13FA /* RestaurantList */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC85F625DFFA42009A13FA /* Assembly */,
+				1ACC85F525DFFA3B009A13FA /* Interactor */,
+				1ACC85F425DFFA34009A13FA /* Presenter */,
+				1ACC85F325DFFA29009A13FA /* View */,
+			);
+			path = RestaurantList;
+			sourceTree = "<group>";
+		};
+		1ACC85F325DFFA29009A13FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC861B25E02109009A13FA /* Cell */,
+				1AFB220E25EB94F100A5DD92 /* FavoritesListView.swift */,
+				1ACC859F25DFD99E009A13FA /* RestaurantListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1ACC85F425DFFA34009A13FA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC85F725DFFA63009A13FA /* RestaurantListPresenter.swift */,
+				1ACC85FF25DFFA6E009A13FA /* RestaurantListPresenterIO.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1ACC85F525DFFA3B009A13FA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC860425DFFA82009A13FA /* RestaurantListInteractor.swift */,
+				1ACC860925DFFA9D009A13FA /* RestaurantListInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1ACC85F625DFFA42009A13FA /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC860E25DFFAB3009A13FA /* RestaurantListAssembly.swift */,
+				1ACC861325DFFBFA009A13FA /* RestaurantListAssemblyProtocol.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1ACC861B25E02109009A13FA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC861C25E02124009A13FA /* RestaurantListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1AFB228625ED01B600A5DD92 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1ACC85DC25DFDFEA009A13FA /* JSONParser.swift */,
+				1ACC85E625DFF74D009A13FA /* CodableParser.swift */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		1AFB228A25ED01FB00A5DD92 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1AFB226E25ECD3F200A5DD92 /* mock-response-best-match-sorted.json */,
+				1ACC85E125DFF246009A13FA /* restaurant-list.json */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ACC859725DFD99E009A13FA /* JustEatTakeAway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACC85C225DFD99F009A13FA /* Build configuration list for PBXNativeTarget "JustEatTakeAway" */;
+			buildPhases = (
+				1ACC859425DFD99E009A13FA /* Sources */,
+				1ACC859525DFD99E009A13FA /* Frameworks */,
+				1ACC859625DFD99E009A13FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustEatTakeAway;
+			productName = JustEatTakeAway;
+			productReference = 1ACC859825DFD99E009A13FA /* JustEatTakeAway.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1ACC85AD25DFD99F009A13FA /* JustEatTakeAwayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACC85C525DFD99F009A13FA /* Build configuration list for PBXNativeTarget "JustEatTakeAwayTests" */;
+			buildPhases = (
+				1ACC85AA25DFD99F009A13FA /* Sources */,
+				1ACC85AB25DFD99F009A13FA /* Frameworks */,
+				1ACC85AC25DFD99F009A13FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ACC85B025DFD99F009A13FA /* PBXTargetDependency */,
+			);
+			name = JustEatTakeAwayTests;
+			productName = JustEatTakeAwayTests;
+			productReference = 1ACC85AE25DFD99F009A13FA /* JustEatTakeAwayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1ACC85B825DFD99F009A13FA /* JustEatTakeAwayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACC85C825DFD99F009A13FA /* Build configuration list for PBXNativeTarget "JustEatTakeAwayUITests" */;
+			buildPhases = (
+				1ACC85B525DFD99F009A13FA /* Sources */,
+				1ACC85B625DFD99F009A13FA /* Frameworks */,
+				1ACC85B725DFD99F009A13FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ACC85BB25DFD99F009A13FA /* PBXTargetDependency */,
+			);
+			name = JustEatTakeAwayUITests;
+			productName = JustEatTakeAwayUITests;
+			productReference = 1ACC85B925DFD99F009A13FA /* JustEatTakeAwayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ACC859025DFD99E009A13FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					1ACC859725DFD99E009A13FA = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					1ACC85AD25DFD99F009A13FA = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 1ACC859725DFD99E009A13FA;
+					};
+					1ACC85B825DFD99F009A13FA = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 1ACC859725DFD99E009A13FA;
+					};
+				};
+			};
+			buildConfigurationList = 1ACC859325DFD99E009A13FA /* Build configuration list for PBXProject "JustEatTakeAway" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1ACC858F25DFD99E009A13FA;
+			productRefGroup = 1ACC859925DFD99E009A13FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ACC859725DFD99E009A13FA /* JustEatTakeAway */,
+				1ACC85AD25DFD99F009A13FA /* JustEatTakeAwayTests */,
+				1ACC85B825DFD99F009A13FA /* JustEatTakeAwayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ACC859625DFD99E009A13FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ACC85A825DFD99F009A13FA /* LaunchScreen.storyboard in Resources */,
+				1ACC85E225DFF246009A13FA /* restaurant-list.json in Resources */,
+				1AFB227C25ECE08700A5DD92 /* mock-response-best-match-sorted.json in Resources */,
+				1ACC85A525DFD99F009A13FA /* Assets.xcassets in Resources */,
+				1ACC862525E02304009A13FA /* RestaurantListTableViewCell.xib in Resources */,
+				1AFB221425EB9ACF00A5DD92 /* FavoritesListView.xib in Resources */,
+				1ACC85A325DFD99E009A13FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACC85AC25DFD99F009A13FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACC85B725DFD99F009A13FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ACC859425DFD99E009A13FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ACC85A025DFD99E009A13FA /* RestaurantListViewController.swift in Sources */,
+				1ACC85E725DFF74D009A13FA /* CodableParser.swift in Sources */,
+				1ACC860A25DFFA9D009A13FA /* RestaurantListInteractorIO.swift in Sources */,
+				1ACC861D25E02124009A13FA /* RestaurantListTableViewCell.swift in Sources */,
+				1ACC860525DFFA82009A13FA /* RestaurantListInteractor.swift in Sources */,
+				1ACC85EC25DFF76B009A13FA /* Restaurant.swift in Sources */,
+				1ACC859C25DFD99E009A13FA /* AppDelegate.swift in Sources */,
+				1ACC85F825DFFA63009A13FA /* RestaurantListPresenter.swift in Sources */,
+				1ACC85DD25DFDFEA009A13FA /* JSONParser.swift in Sources */,
+				1ACC859E25DFD99E009A13FA /* SceneDelegate.swift in Sources */,
+				1AFB220F25EB94F100A5DD92 /* FavoritesListView.swift in Sources */,
+				1ACC860F25DFFAB3009A13FA /* RestaurantListAssembly.swift in Sources */,
+				1ACC861425DFFBFA009A13FA /* RestaurantListAssemblyProtocol.swift in Sources */,
+				1ACC860025DFFA6E009A13FA /* RestaurantListPresenterIO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACC85AA25DFD99F009A13FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ACC85B325DFD99F009A13FA /* JustEatTakeAwayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ACC85B525DFD99F009A13FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ACC85BE25DFD99F009A13FA /* JustEatTakeAwayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1ACC85B025DFD99F009A13FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ACC859725DFD99E009A13FA /* JustEatTakeAway */;
+			targetProxy = 1ACC85AF25DFD99F009A13FA /* PBXContainerItemProxy */;
+		};
+		1ACC85BB25DFD99F009A13FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ACC859725DFD99E009A13FA /* JustEatTakeAway */;
+			targetProxy = 1ACC85BA25DFD99F009A13FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1ACC85A125DFD99E009A13FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ACC85A225DFD99E009A13FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1ACC85A625DFD99F009A13FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ACC85A725DFD99F009A13FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1ACC85C025DFD99F009A13FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1ACC85C125DFD99F009A13FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1ACC85C325DFD99F009A13FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26GZ63PU38;
+				INFOPLIST_FILE = JustEatTakeAway/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saniazafar.JustEatTakeAway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1ACC85C425DFD99F009A13FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26GZ63PU38;
+				INFOPLIST_FILE = JustEatTakeAway/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saniazafar.JustEatTakeAway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1ACC85C625DFD99F009A13FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26GZ63PU38;
+				INFOPLIST_FILE = JustEatTakeAwayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saniazafar.JustEatTakeAwayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustEatTakeAway.app/JustEatTakeAway";
+			};
+			name = Debug;
+		};
+		1ACC85C725DFD99F009A13FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26GZ63PU38;
+				INFOPLIST_FILE = JustEatTakeAwayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saniazafar.JustEatTakeAwayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustEatTakeAway.app/JustEatTakeAway";
+			};
+			name = Release;
+		};
+		1ACC85C925DFD99F009A13FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26GZ63PU38;
+				INFOPLIST_FILE = JustEatTakeAwayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saniazafar.JustEatTakeAwayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JustEatTakeAway;
+			};
+			name = Debug;
+		};
+		1ACC85CA25DFD99F009A13FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26GZ63PU38;
+				INFOPLIST_FILE = JustEatTakeAwayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saniazafar.JustEatTakeAwayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JustEatTakeAway;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ACC859325DFD99E009A13FA /* Build configuration list for PBXProject "JustEatTakeAway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACC85C025DFD99F009A13FA /* Debug */,
+				1ACC85C125DFD99F009A13FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ACC85C225DFD99F009A13FA /* Build configuration list for PBXNativeTarget "JustEatTakeAway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACC85C325DFD99F009A13FA /* Debug */,
+				1ACC85C425DFD99F009A13FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ACC85C525DFD99F009A13FA /* Build configuration list for PBXNativeTarget "JustEatTakeAwayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACC85C625DFD99F009A13FA /* Debug */,
+				1ACC85C725DFD99F009A13FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ACC85C825DFD99F009A13FA /* Build configuration list for PBXNativeTarget "JustEatTakeAwayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACC85C925DFD99F009A13FA /* Debug */,
+				1ACC85CA25DFD99F009A13FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1ACC859025DFD99E009A13FA /* Project object */;
+}

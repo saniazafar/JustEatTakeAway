@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Restaurant List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="RestaurantListViewController" id="BYZ-38-t0r" customClass="RestaurantListViewController" customModule="JustEatTakeAway" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mee-9U-Z6r">
+                                <rect key="frame" x="0.0" y="110" width="414" height="786"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="QU7-hY-DmM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mee-9U-Z6r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ERa-x8-kKD"/>
+                            <constraint firstItem="QU7-hY-DmM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KX6-4E-tDa"/>
+                            <constraint firstItem="QU7-hY-DmM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z0s-uh-g0H"/>
+                            <constraint firstAttribute="bottom" secondItem="mee-9U-Z6r" secondAttribute="bottom" id="drh-Fx-dQf"/>
+                            <constraint firstItem="mee-9U-Z6r" firstAttribute="top" secondItem="QU7-hY-DmM" secondAttribute="bottom" constant="10" id="fgo-DV-nRd"/>
+                            <constraint firstItem="QU7-hY-DmM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qHS-Cr-CN4"/>
+                            <constraint firstItem="mee-9U-Z6r" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zFm-pc-TTF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="QU7-hY-DmM" id="JGc-ak-g4I"/>
+                        <outlet property="tableView" destination="mee-9U-Z6r" id="jgx-BV-PY2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
